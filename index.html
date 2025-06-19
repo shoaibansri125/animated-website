@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background: var();
+            color: var();
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        :root{
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --header-bg: #1f1f1f;
+      --link-color: #0ef;
+      --link-hover: #0363f4;
+      --card-bg: #222;
+      --input-bg: #3a3838;
+      --input-focus-bg: #13bb21;
+      --footer-bg: #111;
+      --footer-text: #0bbe89;
+      --shadow-color: rgba(0, 158, 255, 0.7)
+        }
+        header{
+            padding: 1rem 2rem;
+            position: sticky;
+            background-color: #0bbe89;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 227, 243, 0.5);
+            transition: background 0.3s ease;
+        }
+        .logo{
+            font-weight:700 ;
+            color: var(--link-color);
+            font-size: 1.5rem;
+            transform: background 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-links{
+            display: flex;
+            gap: 1.5rem;
+            margin-left: 80%;
+            list-style: none;
+        }
+           ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+
+            }
+            ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+          }
+
+        .nav-links li::after{
+            content: '';
+            width: 0%;
+           height: 2px;
+            background-color: #0363f4;
+            display: block;
+            transition: 0.5s;
+            position: sticky;
+        }
+        .nav-links li :hover::after{
+            color: var(--link-hover);
+            width: 100%;
+        }
+         .toggle-btn{
+            border: none;
+            background: var(--text-color);
+            color: var(--bg-color);
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            font-size: 15px;
+            border-radius: 20px;
+            font-weight: 800;
+            transition: background 0.3s ease,color 0.3s ease;
+         }
+             .toggle-btn:hover{
+            background: var(--link-hover);
+         }
+        </style>    
+        <body>
+            <header>
+                <nav>
+                    <div class="logo">Bize Pro</div>
+                    <ul class="nav-links">
+                        <li><a href="#HOME">HOME</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                    <button class="toggle-btn" id="toggleTheme">Light Mode</button>
+                </nav>
+            </header>
+</body>
+</html>
